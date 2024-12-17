@@ -1,0 +1,263 @@
+html{
+  cursor: url(/assets/cursor/cursornormal.png), auto;
+}
+
+body {
+  font-family: 'Iceland';
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  background-image: url(/assets/imagens/fundo.jpeg);
+  cursor: url;
+}
+
+/*Newsletter*/
+.newsletter {
+  padding: 80px 6%;
+  width: auto;
+}
+
+.newsletter .content {
+  max-width: 100%;
+  text-align: left;
+}
+
+.newsletter .input-group {
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.newsletter .content h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 5rem;
+}
+
+.newsletter .content p {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.newsletter .input-group {
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.newsletter .input-group .form-control {
+  flex: 1;
+  height: 70px;
+  border: none;
+  border-radius: 0;
+  font-size: 2rem;
+  padding-left: 15px;
+  background-color: #000;
+  color: #fff;
+}
+
+.newsletter .input-group .btn {
+  height: 70px;
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0 20px;
+}
+
+.newsletter .input-group .form-control:focus {
+  box-shadow: none;
+}
+
+
+/* Estilo normal para telas maiores */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 6% 0 50px;
+  position: relative;
+}
+
+.logo {
+  margin-left: 6%;
+  cursor: pointer;
+  font-size: 80px;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 40px;
+}
+
+.hamburguer {
+  display: none;
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.opcoes ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  gap: 60px; 
+}
+
+
+/* Regras para telas menores */
+@media (max-width: 768px) {
+  .opcoes {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: #000000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    border: 2px solid #fff;
+    text-align: center;
+  }
+
+  .opcoes.active {
+    display: flex; 
+  }
+
+  .opcoes ul {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .opcoes li {
+    padding: 10px 0; 
+    border-bottom: 1px solid white; 
+  }
+
+  .opcoes li:last-child {
+    border-bottom: none; 
+  }
+
+  .hamburguer {
+    display: block;
+    color: white;
+  }
+
+  .logo {
+    font-size: 60px;
+  }
+}
+
+/*---------Footer------------*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 6% 0 50px;
+  position: relative;
+}
+
+.opcoesFooter {
+  display: flex;
+  flex-direction: row; /* Garante que os itens fiquem na horizontal */
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  gap: 50px;
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding padrão da lista */
+}
+
+.logoIfc {
+  height: 250px;
+  width: auto;
+  margin-left: 3%;
+}
+
+.opcoesFooter li { /* Altera de p para li */
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  margin: 0 25px;
+}
+
+.opcoesFooter i {
+  margin-left: 15px;
+  font-size: 55px;
+  color: #ffffff;
+}
+
+/*Conteúdo*/
+.titulo-conteudo{
+    text-align: center;
+    font-size: 5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.65em;
+  }
+
+.container-conteudo {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    gap: 20px;
+    margin: 20px;
+    margin-top: 100px;
+}
+ 
+.container-conteudo h2{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.oqplasma, .ondeusado {
+    flex: 1; 
+    max-width: 600px;
+}
+
+.linha1{
+  position: relative;
+  background-color: #fff;
+  height: 100px;
+  width: 10px;
+  left: 50%;
+  margin-top: -100px;
+}
+
+.linha2{
+  position: relative;
+  width: 50%;
+  height: 10px;
+  background-color: #fff;
+  left: 25%;
+}
+
+.linha3{
+  position: absolute;
+  background-color: #fff;
+  height: 100px;
+  width: 10px;
+  left: 25%;
+}
+
+.linha4{
+  position: absolute;
+  background-color: #fff;
+  height: 100px;
+  width: 10px;
+  right: 25%;
+}
+
